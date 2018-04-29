@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666">
+
+    <TextView
+        android:id="@+id/sDatetitle"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:text="날짜"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/sPlacetitle"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:text="검색 내용"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</LinearLayout>

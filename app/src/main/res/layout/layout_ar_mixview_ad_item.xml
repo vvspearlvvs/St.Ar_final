@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:text="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ar_mixview_ad_ranking"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:text="starbucks"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ar_mixview_ad_placename"
+            android:layout_weight="0.12" />
+
+        <TextView
+            android:text="TextView"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ar_mixview_ad_locationid"
+            android:layout_weight="0.10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="adcontent"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ar_mixview_ad_content" />
+
+</LinearLayout>

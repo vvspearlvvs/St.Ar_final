@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/write_review_list_visitDate"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="방문 날짜"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@layout/activity_review_write1_list_border"/>
+
+        <TextView
+            android:id="@+id/write_review_list_placeName"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:text="방문 장소"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:background="@layout/activity_review_write1_list_border"/>
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@layout/activity_review_write1_list_border">
+
+            <Button
+                android:id="@+id/write_review_list_writebtn"
+                android:layout_width="60dp"
+                android:layout_height="26dp"
+                android:text="작성"
+                android:textSize="13dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@layout/activity_review_write_button_background"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

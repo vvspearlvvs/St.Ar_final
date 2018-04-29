@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#e74c3c</item>
+        <item name="colorPrimaryDark">#ac362a</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CategoryView">
+        <item name="android:onClick">navercategoryClicked</item>
+    </style>
+    
+
+
+
+
+</resources>

@@ -1,0 +1,14 @@
+.gradle
+local.properties
+.idea
+build/
+.DS_Store
+*.iml
+*.apk
+*.aar
+*.zip
+google-services.json
+.gitignore.swp
+Would skip repository AR-Trace/
+app/src/main/java/com/dragon4/owo/ar_trace/Util/location/
+src/main/java/com/dragon4/owo/ar_trace/Util/location/

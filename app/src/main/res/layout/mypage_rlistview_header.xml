@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666">
+
+    <TextView
+        android:id="@+id/rDatetitle"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_weight="1.54"
+        android:fontFamily="NanumGothic"
+        android:text="날짜"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rPlacetitle"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_weight="5.08"
+        android:fontFamily="NanumGothic"
+        android:text="장소"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rDeleteTitle"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:fontFamily="NanumGothic"
+        android:text="내용"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_weight="16.48" />
+
+
+</LinearLayout>

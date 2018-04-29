@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ar_mixview"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 광고창뷰 -->
+
+
+    <!-- 여기에 구현하면됨 -->
+    <RelativeLayout
+        android:id="@+id/ar_mixview_naverview_wrapper"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:id="@+id/ar_mixview_naverview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+            <Button
+                android:id="@+id/ar_mixview_naverview_expand"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/ic_minimap_zoom_in" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+
+        android:id="@+id/parentAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:background="@layout/addpopup_background"
+        android:orientation="vertical"
+        android:weightSum="1">
+        >
+
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="12"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.65"
+                    android:text="오늘의 광고"
+                    android:textColor="#e74c3c"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ad_hide"
+                    android:padding="8dp"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="300dp"
+                    android:background="@drawable/icon_xbutton" />
+
+
+            </LinearLayout>
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/ar_mixview_ad_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>-->
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/ar_mixview_ad_listview"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="0.96" />
+        <!--
+        <ListView
+            android:id="@+id/ar_mixview_ad_listview"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_weight="3.67" />-->
+
+       <!--<Button
+        android:id="@+id/add_notseeweek_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="일주일간 보지 않기" /> -->
+    </LinearLayout>
+    <!-- searchbar 아예 서치바메뉴 화면이 사라짐 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="내주소"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ar_mixview_parent_buttonview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="8.8"><!--리니어 레이아웃 없애도 될꺼같음-->
+            <!--그냥버튼뷰 지울부분-->
+            <RelativeLayout
+                android:id="@+id/ar_mixview_buttonview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <Button
+                    android:id="@+id/ar_mixview_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/icon_home"
+                    android:onClick="onHomeButtonClicked" />
+                <!--레이아웃 다시 할려고 텍스트입력 복사본-->
+                <Button
+                    android:id="@+id/ar_mixview_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/icon_search1"
+                    android:onClick="onSearchButtonClicked" />
+
+                <Button
+                    android:id="@+id/ar_mixview_category"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_category1" />
+
+                <EditText
+                    android:id="@+id/ar_mixview_search_text"
+                    android:layout_width="470dp"
+                    android:layout_height="40dp"
+                    android:background="#BBFFFFFF"
+                    android:imeOptions="flagNoFullscreen"
+                    android:inputType="textNoSuggestions"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ar_mixview_home"
+                    android:layout_toEndOf="@+id/ar_mixview_home" />
+
+
+                <!--메뉴숨기기도 지움-->
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--밑에 버튼들 -->
+
+    <!--카테고리 메뉴 나오는 화면-->
+
+    <LinearLayout
+        android:id="@+id/ar_mixview_parent_categoryview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+        <Button
+            android:id="@+id/ar_mixview_category_hide"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/icon_xbutton"/><!--카테고리 메뉴 창닫기-->
+        <!--카테고리메뉴창 보여줌-->
+        <RelativeLayout
+            android:layout_width="420dp"
+            android:layout_height="220dp">
+
+            <GridLayout
+                android:id="@+id/ar_mixview_categoryview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:rowCount="4"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                >
+                <Button
+                    android:id="@+id/ar_mixview_restaurant"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_restaurant1"
+                    />
+                <Button
+                    android:id="@+id/ar_mixview_cafe"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_cafe1"
+                    />
+                <Button
+                    android:id="@+id/ar_mixview_bank"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_bank1"
+                    />
+                <Button
+                    android:id="@+id/ar_mixview_hospital"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_hospital1"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:text="음식점"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:text="카페"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text="은행"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text="병원"/>
+                <Button
+                    android:id="@+id/ar_mixview_bus"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_bus1"/>
+                <!-- 일단그림만 지하철로 마트-지하철로 바꾸기-->
+                <Button
+                    android:id="@+id/ar_mixview_subway"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_subway1"/>
+                <Button
+                    android:id="@+id/ar_mixview_convenience_store"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_convenience_store1"/>
+                <!--일단 그림만 엔터로 lodgment대신 entertainment-->
+                <Button
+                    android:id="@+id/ar_mixview_entertainment"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    style="@style/CategoryView"
+                    android:background="@drawable/icon_entertainment1"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:text="버스"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:text="지하철"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text="편의점"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text="엔터테인먼트"/>
+
+            </GridLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

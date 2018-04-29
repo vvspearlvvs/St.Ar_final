@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="right|center_vertical"
+            android:paddingTop="60dp">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@layout/button_background"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/login_button"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:background="#e74c3c"
+                    android:onClick="onMypageButtonClicked"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/login"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="마이페이지"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@+id/login_button"
+                    android:layout_alignStart="@+id/login_button"
+                    android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="60dp">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@layout/button_background"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/map_button"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:background="#e74c3c"
+                    android:onClick="onMapButtonClicked"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/placeholder"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/map_text"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:background="#e74c3c"
+                    android:gravity="center"
+                    android:text="지도"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/map_button"
+                    android:layout_alignStart="@+id/map_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="left|center_vertical"
+            android:paddingTop="60dp">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@layout/button_background"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/review_button"
+                    android:layout_width="120dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:background="#e74c3c"
+                    android:onClick="onReviewButtonClicked"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/customer_reviews" />
+
+                <TextView
+                    android:id="@+id/review_text"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/review_button"
+                    android:layout_alignStart="@+id/review_button"
+                    android:layout_below="@+id/review_button"
+                    android:background="#e74c3c"
+                    android:gravity="center"
+                    android:text="리뷰"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="St.AR"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</LinearLayout>
